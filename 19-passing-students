@@ -1,0 +1,11 @@
+public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    // Count the number of true conditions
+    Integer passedCount = 0;
+
+    if (passedExam) passedCount++;
+    if (passedAssignments) passedCount++;
+    if (passedProject) passedCount++;
+
+    // A student passes if at least 2 conditions are true
+    return passedCount >= 2;
+}
