@@ -2,5 +2,8 @@ public String formatName(String firstName, String lastName) {
     if(String.IsEmpty(firstName)) {
         return lastName;
     }
+    if(String.IsEmpty(lastName)) {
+        return firstName;
+    }
     return firstName;
 }
