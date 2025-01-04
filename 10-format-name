@@ -6,8 +6,8 @@ public String formatName(String firstName, String lastName) {
         return firstName;
     }
    
-    else if(String.IsNotBlank(firstName) && String.IsNotBlank(firstName)) {
-        return lastName + ', ' +firstName ;
+    if (String.isBlank(firstName) && String.isBlank(lastName)) {
+        return ''; 
     }
-    return '';
+    return firstName +''+ lastName;
 }
