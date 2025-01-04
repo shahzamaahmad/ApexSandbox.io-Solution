@@ -9,5 +9,5 @@ public String formatName(String firstName, String lastName) {
     if (String.isBlank(firstName) && String.isBlank(lastName)) {
         return ''; 
     }
-    return firstName +''+ lastName;
+    return firstName +' '+ lastName;
 }
