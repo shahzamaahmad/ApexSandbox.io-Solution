@@ -1,9 +1,4 @@
 public String changeTimeFormat(String strTime) {
-    if(String.isNotBlank(strTime)){
-        List<String> myList = new List<String>strTime.split(':',2);
+     List<String> myList = new List<String>strTime.split(':',2);
         return  myList;
-
-
-    }
-    return 'Invalid Time';
 }
