@@ -3,7 +3,7 @@ public String changeTimeFormat(String strTime) {
     myList.addAll(strTime.split(':'));
     Integer hour =Integer.valueOf(myList[0]);
     Integer minute =Integer.valueOf(myList[1]);
-    if(hour>12){
+    if(hour>12 && hour==0){
         return String.valueOf(hour) +':'+ String.valueOf(minute)+' '+'PM';
     }
 
