@@ -1,4 +1,4 @@
 public String changeTimeFormat(String strTime) {
-     List<String> myList = new List<String>strTime.split(':',2);
+     List<String> myList = new List<String>.strTime.split(':',2);
         return  myList;
 }
