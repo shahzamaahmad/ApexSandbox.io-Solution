@@ -4,8 +4,8 @@ public String changeTimeFormat(String strTime) {
     Integer hour =Integer.valueOf(myList[0]);
     Integer minute =Integer.valueOf(myList[1]);
     if(hour>12){
-        return String.valueOf(hour) +':'+ String.valueOf(minute);
+        return String.valueOf(hour) +':'+ String.valueOf(minute)+' '+'PM';
     }
 
-    return  'invalid time';
+    return  return String.valueOf(hour) +':'+ String.valueOf(minute)+' '+'AM';
 }
