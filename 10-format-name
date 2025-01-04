@@ -1,6 +1,6 @@
 public String formatName(String firstName, String lastName) {
     if(String.IsBlank(firstName) {
-        return '';
+        return lastName;
     }
     return firstName;
 }
