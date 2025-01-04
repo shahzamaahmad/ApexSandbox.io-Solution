@@ -1,10 +1,8 @@
 public String changeTimeFormat(String strTime) {
     if(String.isNotBlank(strTime)){
-        List<String> tme = new List<String>{
-            strTime.split(':');
-        };
+        List<String> myList = new List<String>strTime.split(':');
         //tme.add = strTime.split(':');
-        return  tme;
+        return  myList;
 
 
     }
