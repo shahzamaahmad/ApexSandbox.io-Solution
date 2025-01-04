@@ -5,7 +5,7 @@ public String nameFromEmail(String email) {
 
 
 
-        return firstName + ' ' + lastName;
+        return firstName.toLowerCase() + ' ' + lastName.toLowerCase();
     }
     return email;
 }
