@@ -1,5 +1,5 @@
 public String changeTimeFormat(String strTime) {
      List<String> myList = new List<String>();
-     myList.add(strTime.split(':',2))
+     myList.add(strTime.split(':'))
         return  myList;
 }
