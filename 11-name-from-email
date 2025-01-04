@@ -1,6 +1,6 @@
 public String nameFromEmail(String email) {
     if(String.isNotBlank(email)){
-        String result = email.subString('.');
+        String result = email.indexof('.');
         return result;
     }
     return email;
