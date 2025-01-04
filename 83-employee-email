@@ -1,3 +1,4 @@
 public String employeeEmail(Map<String, String> employeeIdToEmail, String employeeId) {
    system.debug(employeeIdToEmail);
+   return employeeIdToEmail;
 }
