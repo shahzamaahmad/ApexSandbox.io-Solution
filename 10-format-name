@@ -10,3 +10,4 @@ public String formatName(String firstName, String lastName) {
         return lastName + ', ' +firstName ;
     }
     return lastName + ', ' +firstName ;
+}
