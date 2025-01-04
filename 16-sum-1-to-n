@@ -1,6 +1,11 @@
 public Integer sumToN(Integer n) {
     Integer sum =0;
-    for (Integer i = 0; i < n; i++) {
-        return sum+i;
+    Integer sum2 =0;
+    for (Integer i = 0; i <= n; i++) {
+       sum2=sum+i;
+        if(i==n){
+            reutn sum2;
+
+        }
     }
 }
