@@ -1,6 +1,7 @@
 public String changeTimeFormat(String strTime) {
     if(String.isNotBlank(strTime)){
-        List<String> time2 = strTime.split(':');
+        List<String> tme=new List<String>();
+        tme.add = strTime.split(':');
         return  time2;
 
 
