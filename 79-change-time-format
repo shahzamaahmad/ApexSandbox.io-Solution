@@ -1,6 +1,6 @@
 public String changeTimeFormat(String strTime) {
-    List<String> myList = new List<String>();
-    myList.addAll(strTime.split(':'));
+  //  List<String> myList = new List<String>();
+    String[] myList = strTime.split(':');
     Integer hour =Integer.valueOf(myList[0]);
     String minute =myList[1];
     if(hour>=12){
