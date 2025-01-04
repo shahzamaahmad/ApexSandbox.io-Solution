@@ -7,5 +7,5 @@ public String changeTimeFormat(String strTime) {
         return String.valueOf(hour) +':'+ String.valueOf(minute)+' '+'PM';
     }
 
-    return String.valueOf(hour) +':'+ String.valueOf(minute)+' '+'AM';
+    return strTime +' '+'AM';
 }
