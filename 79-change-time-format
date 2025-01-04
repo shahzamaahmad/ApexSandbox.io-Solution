@@ -30,8 +30,8 @@ public String changeTimeFormat(String strTime) {
         period = 'PM';
     }
 
-    // Convert the hour to a string without any unnecessary padding
-    String formattedHour = String.valueOf(hour);
+    // Format the hour with a leading zero if needed
+    String formattedHour = (hour < 10 ? '0' : '') + String.valueOf(hour);
 
     // Return the formatted time in 12-hour format
     return formattedHour + ':' + minute + ' ' + period;
