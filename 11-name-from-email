@@ -3,4 +3,5 @@ public String nameFromEmail(String email) {
         String result = email.subString(.);
         return result;
     }
+    return email;
 }
