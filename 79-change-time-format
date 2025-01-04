@@ -1,10 +1,10 @@
 public String changeTimeFormat(String strTime) {
     List<String> myList = new List<String>();
     myList.addAll(strTime.split(':'));
-    Integer hour =Integer.valueOf(myList[0])
-    Integer minute =Integer.valueOf(myList[1])
+    Integer hour =Integer.valueOf(myList[0]);
+    Integer minute =Integer.valueOf(myList[1]);
     if(hour>12){
-        return String.valueOf(hour) +':'+ String.valueOf(minute)
+        return String.valueOf(hour) +':'+ String.valueOf(minute);
     }
 
     return  'invalid time';
