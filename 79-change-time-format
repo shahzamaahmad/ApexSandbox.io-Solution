@@ -9,7 +9,6 @@ public String changeTimeFormat(String strTime) {
 
 //     return strTime +' '+'AM';
 // }
-
     // Split the input string into hours and minutes
     String[] timeParts = strTime.split(':');
     Integer hour = Integer.valueOf(timeParts[0]);
@@ -31,8 +30,8 @@ public String changeTimeFormat(String strTime) {
         period = 'PM';
     }
 
-    // Format the hour to always be two digits
-    String formattedHour = String.valueOf(hour).padLeft(2, '0');
+    // Convert the hour to a string without any unnecessary padding
+    String formattedHour = String.valueOf(hour);
 
     // Return the formatted time in 12-hour format
     return formattedHour + ':' + minute + ' ' + period;
