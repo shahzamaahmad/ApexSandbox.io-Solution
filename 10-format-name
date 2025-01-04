@@ -1,5 +1,5 @@
 public String formatName(String firstName, String lastName) {
-    if(firstName.size==0 && lastName.size==0){
-        return ' ';
+    if(firstName.length()==0 && lastName.length==0){
+        return '';
     }
 }
