@@ -1,19 +1,11 @@
 public Map<String, Decimal> industrySummary(List<Account> accounts) {
-        // Initialize a map to store the summary
         Map<String, Decimal> industryRevenueMap = new Map<String, Decimal>();
-        
-        // Iterate over the accounts
         for (Account acc : accounts) {
-            // Check if the account's industry is already in the map
             if (industryRevenueMap.containsKey(acc.Industry)) {
-                // Add the current account's revenue to the existing value
                 industryRevenueMap.put(acc.Industry, industryRevenueMap.get(acc.Industry) + acc.AnnualRevenue);
             } else {
-                // Add a new key with the account's revenue
                 industryRevenueMap.put(acc.Industry, acc.AnnualRevenue);
             }
         }
-        
-        // Return the final map
         return industryRevenueMap;
     }
