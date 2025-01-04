@@ -1,8 +1,8 @@
 public String formatName(String firstName, String lastName) {
-    if(String.IsEmpty(firstName)) {
+    if(String.IsBlank(firstName)) {
         return lastName;
     }
-    else if(String.IsEmpty(lastName)) {
+    else if(String.IsBlank(lastName)) {
         return firstName;
     }
    
