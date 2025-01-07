@@ -1,9 +1,6 @@
 public Map<String, List<Case>> casesByType(List<Case> cases) {
-    // Initialize an empty map to store case types and corresponding lists of cases
-    Map<String, List<Case>> caseMap = new Map<String, List<Case>>();
-
-    // Iterate through each case in the list
-    for (Case c : cases) {
+        Map<String, List<Case>> caseMap = new Map<String, List<Case>>();
+    for (Case c : cases2) {
         // Check if the Type field is not null or empty
         if (!String.isBlank(c.Type)) {
             // If the map already contains the type as a key
