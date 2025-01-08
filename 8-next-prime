@@ -1,4 +1,13 @@
 public Integer nextPrime(Integer num) {
+
+    Integer nextNum = num + 1;
+        while (true) {
+            if (isPrime(nextNum)) {
+                return nextNum;
+            }
+        nextNum++;
+        }
+
     
     public static Boolean isPrime(Integer n){
     for (Integer i = 2; i <= n-1; i++){
@@ -9,14 +18,6 @@ public Integer nextPrime(Integer num) {
     return true;
     }
 
-   // public static Integer nextPrime2(Integer num) {
-    Integer nextNum = num + 1;  // Start with the next number
-        while (true) {
-            if (isPrime(nextNum)) {
-                return nextNum;
-            }
-        nextNum++;
-        }
-  //  }
+    
 }
 
