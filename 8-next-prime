@@ -11,7 +11,7 @@ public boolean isPrime(n){
         if (isPrime(nextNum)){
             return nextNum;
         };
-        nextNum++
+        nextNum++;
     }
     return nextNum;
 }
