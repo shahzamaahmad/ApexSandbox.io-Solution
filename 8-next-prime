@@ -2,23 +2,22 @@ public Integer nextPrime(Integer num) {
     nextPrime2(num);
     
     public static Boolean isPrime(Integer n){
-
     for (Integer i = 2; i <= n; i++){
-    if(Math.mod(n,2)==0) return false;
+    if(Math.mod(n,2)==0) {
+        return false; }
     }
     return true;
     }
 
-    public static Integer nextPrime2(Integer num) {
+   // public static Integer nextPrime2(Integer num) {
         Integer nextNum = num + 1;  // Start with the next number
 
-        // Keep checking the next number until a prime is found
         while (true) {
             if (isPrime(nextNum)) {
-                return nextNum;  // Return the next prime number
+                return nextNum;
             }
-            nextNum++;  // Increment to check the next number
+            nextNum++;
         }
-    }
+  //  }
 }
 
