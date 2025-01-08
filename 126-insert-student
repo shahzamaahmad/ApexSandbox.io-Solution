@@ -1,6 +1,6 @@
 public Id insertStudent(String name, String email) {
     // Step 1: Create a new instance of the apxio__Student__c object using the new keyword
-        apxio__Student__c newStudent = new apxio__Student__c();
+        Student__c newStudent = new Student__c();
         
         // Step 2: Set the fields with the provided values
         newStudent.Name = name; // Name field is a standard field, setting the student's name
