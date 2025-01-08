@@ -1,8 +1,10 @@
 public Integer nextPrime(Integer num) {
-   for (Integer i = num; i++) {
-       if(Math.mod(i,2)==0){
-           return i;
-       }
+    Integer nextNum = num + 1;  // Start from the next number
+        
+        while (true) {
+            if (Math.mod(next,2)==0)) {
+                return nextNum;  // Return the first prime number found
+            }
+            nextNum++;  // Check the next number if not prime
+        }
     }
-    return i;
-}
