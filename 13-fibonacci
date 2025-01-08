@@ -1,9 +1,7 @@
 public Integer fibonacci(Integer n) {
-    public static Integer fibonacci(Integer n) {
         if (n == 2) return 1; // Base case: Fibonacci(2) = 1
         if (n == 1) return 1; // Base case: Fibonacci(1) = 1
         integer result = fibonacci(n - 1) + fibonacci(n - 2);
         system.debug(result);
         return  result; // Recursive call
     }
-}
