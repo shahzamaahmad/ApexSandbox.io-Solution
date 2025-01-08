@@ -2,7 +2,7 @@ public Integer nextPrime(Integer num) {
     Integer nextNum = num + 1;  // Start from the next number
         
         while (true) {
-            if (!Math.mod(next,2))) {
+            if (Math.mod(next,2)!=0)) {
                 return nextNum;  // Return the first prime number found
             }
             nextNum++;  // Check the next number if not prime
