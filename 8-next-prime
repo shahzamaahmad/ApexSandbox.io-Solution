@@ -14,7 +14,4 @@ public Integer nextPrime(Integer num) {
         }
         nextNum++;
     }
-    return nextNum;
-
-
 }
