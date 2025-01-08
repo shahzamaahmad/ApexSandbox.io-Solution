@@ -9,11 +9,3 @@ Integer nextNum = num+1;
     return nextNum; // Prime number
 }
 
-Integer nextNum = num + 1;  // Start from the next number
-        
-        while (true) {
-            if (isPrime(nextNum)) {
-                return nextNum;  // Return the first prime number found
-            }
-            nextNum++;  // Check the next number if not prime
-        }
