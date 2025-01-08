@@ -1,5 +1,4 @@
 public Integer nextPrime(Integer num) {
-    nextPrime2(num);
     
     public static Boolean isPrime(Integer n){
     for (Integer i = 2; i <= Math.sqrt(n); i++){
