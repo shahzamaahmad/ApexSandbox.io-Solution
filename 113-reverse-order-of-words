@@ -1,4 +1,7 @@
 public String reverseWordsInASentence(String sentence){
-    return sentence.reverse();
+    String rsen = sentence.reverse();
+    String word = rsen.split();
+    String result = " ".join(word[::-1] for word in words);
+    return result;
 
 }
