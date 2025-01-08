@@ -1,6 +1,6 @@
 public Integer nextPrime(Integer num) {
 Integer nextNum = num+1;
- for (Integer i = 2; i < num; i++) {
+ for (Integer i = 2; i < nextNum; i++) {
         if (Math.mod(nextNum, i) == 0) {
             return nextNum; // Not a prime number
         }
