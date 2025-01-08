@@ -2,14 +2,13 @@ public String reverseWordsInASentence(String sentence){
         
         if(!String.isBlank(sentence)){
             String reversedSentence = sentence.reverse();
-        List<String> words = reversedSentence.split(' ');
-        List<String> reversedWords = new List<String>();
-        for (String word : words) {
+            List<String> words = reversedSentence.split(' ');
+            List<String> reversedWords = new List<String>();
+            for (String word : words) {
             reversedWords.add(word.reverse());
+            }
+            String result = String.join(reversedWords, ' ');
+            return result;
         }
-        String result = String.join(reversedWords, ' ');
-        return result;
-        }
-        
     return sentence;
 }
