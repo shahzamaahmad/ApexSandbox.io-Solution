@@ -1,5 +1,5 @@
 public Integer nextPrime(Integer num) {
-    nextPrime(num);
+    nextPrime2(num);
     public static Boolean isPrime(Integer n){
 
     for (Integer i = 2; i <= n; i++){
@@ -8,7 +8,7 @@ public Integer nextPrime(Integer num) {
     return true;
     }
 
-    public static Integer nextPrime(Integer num) {
+    public static Integer nextPrime2(Integer num) {
         Integer nextNum = num + 1;  // Start with the next number
 
         // Keep checking the next number until a prime is found
