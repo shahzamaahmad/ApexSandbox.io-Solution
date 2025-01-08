@@ -1,9 +1,19 @@
 public Integer nextPrime(Integer num) {
 Integer nextNum = num+1;
- for (Integer i = 2; i <= Math.sqrt(nextNum); i++) {
+ for (Integer i = 2; i <=nextNum; i++) {
         if (Math.mod(nextNum, i) != 0) {
             return nextNum; // Not a prime number
         }
+
     }
     return nextNum; // Prime number
 }
+
+Integer nextNum = num + 1;  // Start from the next number
+        
+        while (true) {
+            if (isPrime(nextNum)) {
+                return nextNum;  // Return the first prime number found
+            }
+            nextNum++;  // Check the next number if not prime
+        }
