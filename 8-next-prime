@@ -1,7 +1,17 @@
 public Integer nextPrime(Integer num) {
-Integer nextNum = num+1;
- for (Integer i = 2; i <= nextNum; i++) {
-        if (Math.mod(nextNum, i) == 0) nextNum++;
+public boolean isPrime(n){
+    if(Math.mod(n,2)==0){
+        return false;
+    }
+    return true;
+    }
+
+    Integer nextNum = num+1;
+    for (Integer i = 2; i <= nextNum; i++) {
+        if (isPrime(nextNum)){
+            return nextNum;
+        };
+        nextNum++
     }
     return nextNum;
 }
