@@ -8,7 +8,7 @@ public Integer nextPrime(Integer num) {
     }
 
     Integer nextNum = num+1;
-    for (Integer i = 2; i <= nextNum; i++) {
+    while (true) {
         if (isPrime(nextNum)) return nextNum;
         nextNum++;
     }
