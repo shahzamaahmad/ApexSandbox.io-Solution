@@ -9,7 +9,9 @@ public Integer nextPrime(Integer num) {
 
     Integer nextNum = num+1;
     while (true) {
-        if (isPrime(nextNum)) return nextNum;
+        if (isPrime(nextNum)) {
+            return nextNum;
+        }
         nextNum++;
     }
     return nextNum;
