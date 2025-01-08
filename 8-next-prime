@@ -7,11 +7,15 @@ public Integer nextPrime(Integer num) {
     return true;
     }
 
-    Integer nextNum = num+1;
-    while (true) {
-        if (isPrime(nextNum)) {
-            return nextNum;
+    public Integer nextPrime(Integer num) {
+        Integer nextNum = num + 1;  // Start with the next number
+
+        // Keep checking the next number until a prime is found
+        while (true) {
+            if (isPrime(nextNum)) {
+                return nextNum;  // Return the next prime number
+            }
+            nextNum++;  // Increment to check the next number
         }
-        nextNum++;
     }
 }
