@@ -1,7 +1,7 @@
 public Integer nextPrime(Integer num) {
 Integer nextNum = num+1;
- for (Integer i = 2; i < i <= nextNum; i++) {
-        if (Math.mod(nextNum, i) == 0) {
+ for (Integer i = 2; i <= Math.sqrt(nextNum); i++) {
+        if (Math.mod(nextNum, i) != 0) {
             return nextNum; // Not a prime number
         }
     }
