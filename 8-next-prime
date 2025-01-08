@@ -1,0 +1,8 @@
+public Integer nextPrime(Integer num) {
+   for (Integer i = num; i++) {
+       if(Math.mod(i,2)==0){
+           return i;
+       }
+    }
+    return i;
+}
