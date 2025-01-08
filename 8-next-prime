@@ -3,7 +3,8 @@ public Integer nextPrime(Integer num) {
     public static Boolean isPrime(Integer n){
     for (Integer i = 2; i <= Math.sqrt(n); i++){
     if(Math.mod(n,2)==0) {
-        return false; }
+        return false; 
+    }
     }
     return true;
     }
@@ -14,7 +15,7 @@ public Integer nextPrime(Integer num) {
             if (isPrime(nextNum)) {
                 return nextNum;
             }
-            nextNum++;
+        nextNum++;
         }
   //  }
 }
