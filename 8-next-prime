@@ -1,5 +1,5 @@
 public Integer nextPrime(Integer num) {
-public boolean isPrime(n){
+public static boolean isPrime(n){
     if(Math.mod(n,2)==0){
         return false;
     }
