@@ -12,7 +12,7 @@ public static Boolean isPrime(Integer n){
     for (Integer i = 2; i <= nextNum; i++) {
         if (isPrime(nextNum)){
             return nextNum;
-        };
+        }
         nextNum++;
     }
     return nextNum;
