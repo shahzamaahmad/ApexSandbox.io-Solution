@@ -2,7 +2,7 @@ public Integer nextPrime(Integer num) {
     
     public static Boolean isPrime(Integer n){
     for (Integer i = 2; i <= n-1; i++){
-    if(Math.mod(n,2)==0) {
+    if(Math.mod(n,i)==0) {
         return false; 
     }
     }
